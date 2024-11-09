@@ -1,0 +1,21 @@
+/*h1{
+    color: white;
+    font-size: 120px;
+    font-weight: 1000;
+    font-style: italic;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+}*/
+
+/* h1::first-letter{
+    color: red;
+} */
+
+#my-font{
+    font-family: monospace;
+}
+.myinfo{
+    color: red;
+    background-color: black;
+    font-weight: bolder;
+}

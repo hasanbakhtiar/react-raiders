@@ -1,0 +1,12 @@
+.mytext{
+    color: yellow;
+    background-color: black;
+    text-align: justify;
+    text-transform: lowercase;
+}
+
+.special-text{
+    background-color: red;
+    color: black;
+    font-size: 30px;
+}
