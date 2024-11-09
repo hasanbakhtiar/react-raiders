@@ -1,7 +1,7 @@
-.mytext{
+/* .mytext{
     color: yellow;
     background-color: black;
-    text-align: justify;
+    text-align: center;
     text-transform: lowercase;
 }
 
@@ -9,4 +9,47 @@
     background-color: red;
     color: black;
     font-size: 30px;
+} */
+
+
+/* .two>.mycolor{ */
+    /* #123
+        red green blue    
+    */
+    /* background-color: #0000ff33; */
+    /* background-color: rgb(255,0,0); */
+    /* background-color: rgba(255,0,0,0.2); */
+    /* background-color: hsla(180, 33%, 20%, 0.448); */
+    /* background-color: hsl(180, 33%, 20%); */
+    /* background-color: hwb(180 13% 73%); */
+    /* color: #fff; */
+
+/* } */
+
+html{
+    font-size: 10px;
+}
+
+
+
+.main-text{
+    font-size: 20px;
+}
+
+.main-text p{
+    text-decoration: underline;
+    /* letter-spacing: 20px; */
+    /* line-height: 120px; */
+    /* word-spacing: 20px; */
+    font-size: 3rem;
+}
+
+img{
+    /* border-left: 5px dotted #f0f; */
+    /* border-top: 10px double #3131aa; */
+    border: 5px solid #f0f;
+    /* border-top-left-radius: 50px; */
+    /* border-bottom-right-radius: 50px; */
+    border-radius: 50%;
+    object-fit: cover;
 }
