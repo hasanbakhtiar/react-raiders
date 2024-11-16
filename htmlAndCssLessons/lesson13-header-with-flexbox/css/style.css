@@ -1,0 +1,111 @@
+@import url("./reset.css");
+
+header {
+  width: 99.8%;
+  height: 100px;
+  background: linear-gradient(
+    295deg,
+    rgba(165, 0, 0, 1) 0%,
+    rgba(0, 80, 147, 1) 100%
+  );
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  &:hover {
+    background: black;
+  }
+  .logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 100px;
+    }
+  }
+  nav {
+    width: 80%;
+    display: flex;
+    ul {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      li {
+        border: 1px solid red;
+        padding: 7px;
+        * {
+          transition: 0.5s;
+        }
+        &:hover {
+          background-color: red;
+          a {
+            color: #fff;
+          }
+        }
+        a {
+          font-weight: bolder;
+          font-size: 20px;
+          color: red;
+        }
+      }
+    }
+  }
+}
+
+main {
+  .hero {
+    width: 100%;
+    height: 90vh;
+    background-image: url("https://wallpaperaccess.com/full/19693.jpg");
+    background-position: center;
+    background-size: cover;
+    .bg-color{
+      width: 100%;
+      height: 90vh;
+      background-color: rgba(0, 0,0,0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h1{
+        color: #fff;
+        font-size: 70px;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: rgba(0,0,0,0.7);
+        border-radius: 10px;
+        padding: 20px;
+      }
+    }
+  }
+
+  .card-con{
+    padding-top:30px ;
+    padding-bottom:30px ;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .card{
+      border: 1px solid #000;
+      border-radius: 10px;
+      width: 20%;
+      img{
+        border-radius: 10px;
+        height: 350px;
+        width: 100%;
+      }
+      h5{
+        font-weight: bolder;
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+      p{
+        height: 200px;
+        overflow-y: scroll;
+      }
+    }
+  }
+}
+
