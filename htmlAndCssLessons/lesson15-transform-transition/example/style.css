@@ -1,0 +1,49 @@
+.box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+    overflow: scroll;
+}
+
+
+
+.picture{
+    width: 40%;
+    height: 30vh;
+    background-image: url('https://www.trueachievements.com/customimages/114788.jpg');
+    background-position: center;
+    background-size: cover;
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+
+    .box{
+        position: absolute;
+        left: -100px;
+        /* opacity: 0; */
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        color: #fff;
+        font-weight: bolder;
+        font-family: sans-serif;
+        transition: .5s;
+        /* opacity: 0; */
+    }
+    
+    
+    &:hover{
+        background-image: url('https://steamcdn-a.akamaihd.net/steam/apps/588650/ss_b7cf2ca21fe3648c53f808b80393cc727815dcc5.1920x1080.jpg?t=1553880029');
+        height: 40vh;
+        .box{
+            overflow: hidden;
+            /* opacity: 1; */
+            left: 0;
+        }
+    }
+}

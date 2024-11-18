@@ -1,4 +1,48 @@
 @import url("../css/reset.css");
+/* main{
+    width: 30%;
+    height: 130px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left-con, .right-con{
+        width: 48%;
+
+    }
+    .left-con{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        .one{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .two{
+            position: absolute;
+            top: 50px;
+            left: 150px;
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+    }
+
+    .right-con{
+        display: flex;
+        justify-content: space-between;
+        .three, .four{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    }
+} */
+
+
+
+
 header {
   position: fixed;
   top: 0;
@@ -23,6 +67,8 @@ main {
     align-items: center;
     justify-content: space-evenly;
     .gallery-item {
+      height: 400px;
+      overflow: hidden;
       border: 1px solid #000;
       border-radius: 10px;
       width: 30%;
