@@ -1,0 +1,40 @@
+@import url("../css/reset.css");
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: bisque;
+}
+
+main {
+  .hero {
+    width: 100%;
+    height: 70vh;
+    background-image: url("https://wallup.net/wp-content/uploads/2016/03/10/318375-nature-landscape-lake-mountain-forest-wildflowers-spring-pine_trees-path-Switzerland-HDR.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .gallery {
+    position: relative;
+    bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .gallery-item {
+      border: 1px solid #000;
+      border-radius: 10px;
+      width: 30%;
+      .img-con {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        img {
+          overflow: hidden;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
