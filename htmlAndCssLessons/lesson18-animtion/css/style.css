@@ -1,0 +1,74 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css");
+
+/* .box{
+
+  position: absolute;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: disco-box;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-timing-function: ease-in-out;
+  clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+
+}
+@keyframes disco-box {
+  0%{
+    left: 0;
+    top: 0;
+  }
+  25%{
+    left: 300px;
+    top: 0px;
+    background-color: green;
+  }
+  50%{
+    left: 0px;
+    top: 300px;
+    background-color: yellow;
+  }
+
+  75%{
+    left: 300px;
+    top: 300px;
+    background-color: purple;
+  }
+
+  100%{
+    left: 0px;
+    top: 0px;
+    background-color: orange;
+  }
+
+  
+  
+  from{left: 0px;}
+  to{left: 100px;}
+} */
+
+/* .circle {
+  margin: 40px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  animation: firlanan-circle 3s linear infinite ;
+  .baby-circle {
+    width: 50px;
+    height: 50px;
+    background-color: bisque;
+    border-radius: 50%;
+  }
+} */
+/* @keyframes firlanan-circle{
+  100%{
+    transform: rotate(360deg);
+  }
+} */
+
+

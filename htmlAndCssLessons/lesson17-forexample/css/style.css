@@ -1,0 +1,55 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css");
+.card {
+  transition: .5s;
+  position: relative;
+  width: 30%;
+  height: 25vh;
+  border: 1px solid #000;
+  margin: 100px;
+  overflow: hidden;
+  .img-con {
+    transition: .5s;
+    overflow: hidden;
+    height: 20vh;
+  }
+  .img-con,
+  img {
+    width: 100%;
+  }
+  .text-con {
+    transition: .5s;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    bottom: -40px;
+    height: 10vh;
+    background-color: red;
+    .cart-btn {
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 20px;
+      overflow: hidden;
+      .text,
+      .icon {
+        transition: 0.5s;
+        transform: translateY(0px);
+      }
+      &:hover {
+        .text,
+        .icon {
+          transform: translateY(-15px);
+        }
+      }
+    }
+  }
+
+  &:hover{
+    transform: translateY(-20px);
+    .text-con{
+        bottom: 0px;
+    }
+  }
+}
