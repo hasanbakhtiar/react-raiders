@@ -1,0 +1,113 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css");
+
+/* 
+.box{
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+@media (max-width:600px){
+  .box{
+    background-color: green;
+  }
+}
+
+@media (min-width:600px){
+  .box{
+    background-color: red;
+  }
+}
+
+
+@media (min-width:768px){
+  .box{
+    background-color: gray;
+  }
+}
+
+
+@media (min-width:992px){
+  .box{
+    background-color: orange;
+  }
+} */
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: bisque;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  .logo {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    width: 20%;
+  }
+  nav {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    ul {
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  button {
+    display: none;
+  }
+}
+
+
+
+main {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  section {
+    height: 170vh;
+    background-color: red;
+
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    .card {
+      width: 30%;
+      height: 40vh;
+      background-color: goldenrod;
+      border-radius: 20px;
+      font-size: 50px;
+      color: #fff;
+      display: flex;align-items: center;justify-content: center;
+    }
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  header {
+    nav {
+      display: none;
+    }
+    button {
+      display: block;
+    }
+  }
+
+  main{
+    section{
+      height: auto;
+      /* padding: 20px 0px; */
+      .card{
+        width: 48%;
+      }
+    }
+  }
+}
