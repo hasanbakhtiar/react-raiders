@@ -47,6 +47,8 @@ switch(info){
         console.log('this is 5');
     break;
     case 10:
+    case 10:
+    case 10:
         console.log('this is 10');
     break;
     case "hello":
