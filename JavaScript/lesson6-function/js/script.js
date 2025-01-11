@@ -96,7 +96,7 @@ const dataList = (comingData)=>{
         }
 }
 
-dataList(cars)
+dataList(cars,cat)
 
 
 const dataAndFilter = (data,filterCat,filterItem)=>{
