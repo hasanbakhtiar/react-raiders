@@ -96,7 +96,11 @@ import { products } from "./data.js";
 // console.log(useRegex("google.org"));
 
 
-const result = Math.ceil(Math.random()*10);
-console.log(result);
+// const result = Math.ceil(Math.random()*10);
+// console.log(result);
 
 const studentsName = ['Turan',"Gunel","Lala","Ayan"];
+
+
+const randomNumber = Math.round(Math.random()*studentsName.length);
+console.log(studentsName[randomNumber]);
