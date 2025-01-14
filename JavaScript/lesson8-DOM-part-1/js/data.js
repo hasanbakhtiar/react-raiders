@@ -242,5 +242,11 @@ const products = [
 ]
 
 
+const langData = {
+  az:["Ana Səhifə","Haqqımızda","Xidmətlər","Məqalələr","Əlaqə"],
+  en:["Home","About us","Services","Blogs","Contact"],
+}
 
-export {products};
+
+
+export {products,langData};
