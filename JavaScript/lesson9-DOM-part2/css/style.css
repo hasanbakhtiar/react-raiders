@@ -1,0 +1,39 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css');
+
+/* .photo-con{
+    position: relative;
+    img{
+        transition: .5s;
+        position: absolute;
+    }
+    .img-one{
+        opacity: 1;
+    }
+    .img-two{
+        opacity: 0;
+    }
+}
+
+.btn-con{
+    width: 55%;
+    position: relative;
+    button{
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        background-color: aqua;
+        border: none;
+        position: absolute;
+        &:hover{
+            cursor: pointer;
+        }
+        &:nth-child(1){
+            top: 170px;
+        }
+        &:nth-child(2){
+            top: 170px;
+            right: 0px;
+        }
+    }
+} */
