@@ -1,11 +1,17 @@
 const ul = document.querySelector('ul');
 
-fetch('https://fakestoreapi.com/products')
-.then(res=>res.json())
-.then(data=>{
-    let li = "";
-    data.map(item=>{
-        li+=`<li>${item.title}</li>`
+
+const productList = (start,end)=>{
+    fetch('https://dummyjson.com/products')
+    .then(res=>res.json())
+    .then(data=>{
+        let li = "";
+        data.products.slice(start,end).map(item=>{
+            li+=`<li><img width="70" src="${item.images[0]}"/>${item.title}</li>`
+        });
+        ul.innerHTML = li
     });
-    ul.innerHTML = li
-})
+}
+
+productList(5,10);
+
