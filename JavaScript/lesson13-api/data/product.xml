@@ -1,0 +1,14 @@
+<products>
+    <product id="1">
+            <title>Asus Zenbook</title>
+            <price>2000</price>
+    </product>
+    <product id="2">
+            <title>Asus Zenbook</title>
+            <price>2000</price>
+    </product>
+    <product id="3">
+            <title>Asus Zenbook</title>
+            <price>2000</price>
+    </product>
+</products>
