@@ -1,0 +1,8 @@
+.my-card{
+    height: 50vh;
+    background-color: bisque;
+    border-radius: 20px;
+    img{
+        width: 100%;
+    }
+}
