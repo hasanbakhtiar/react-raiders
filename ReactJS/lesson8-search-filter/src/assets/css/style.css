@@ -1,0 +1,7 @@
+.active{
+    color: orange !important;
+}
+.activeForCat{
+    background-color:orange;
+    color: #000;
+}

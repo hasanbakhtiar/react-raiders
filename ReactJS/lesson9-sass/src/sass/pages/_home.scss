@@ -1,0 +1,21 @@
+ul{
+    // @include flexCenter();
+    li{
+
+
+$base-color: #036;
+
+@for $i from 1 through 7 {
+  &:nth-child(3n + #{$i}) {
+    background-color: lighten($base-color, $i * 13%);
+  }
+}
+        
+        // color: $primaryColor;
+        // @if($primaryFontSize>20px){
+        //     font-size:30px+10px ;
+        // }@else{
+        //     font-size:50px ;
+        // }
+    }
+}
