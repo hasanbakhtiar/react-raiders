@@ -24,11 +24,19 @@ const Filter: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>(cat);
   const [products, setProducts] = useState<productType[]>([]);
   useEffect(() => {
+  if (!cat) {
     axios.get('https://fakestoreapi.com/products/categories')
-      .then(res => setCategory(res.data));
+    .then(res => setCategory(res.data));
 
-    axios.get(`https://fakestoreapi.com/products/category/${selectedCategory}`)
-      .then((res) => setProducts(res.data));
+  axios.get(`https://fakestoreapi.com/products`)
+    .then((res) => setProducts(res.data));
+  }else{
+    axios.get('https://fakestoreapi.com/products/categories')
+    .then(res => setCategory(res.data));
+
+  axios.get(`https://fakestoreapi.com/products/category/${selectedCategory}`)
+    .then((res) => setProducts(res.data));
+  }
   }, [selectedCategory]);
 
   return (
