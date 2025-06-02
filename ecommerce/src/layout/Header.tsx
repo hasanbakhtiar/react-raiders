@@ -1,5 +1,6 @@
 import React from 'react'
-import { NavLink } from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -17,7 +18,7 @@ const Header = () => {
           <NavLink className="nav-link" to="/products">Products</NavLink>
         </li>
       </ul>
-      <Link className="btn btn-danger" to="/login">Login</Link>
+      <Link className="btn btn-warning" to="/login">Login</Link>
     </div>
   </div>
 </nav>

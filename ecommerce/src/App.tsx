@@ -5,7 +5,7 @@ import Header from './layout/Header.tsx';
 import Footer from './layout/Footer.tsx';
 import Products from './pages/Products.tsx';
 import ProductDetails from './pages/ProductDetails.tsx';
-
+import Login from './pages/auth/Login.tsx';
 
 const App = () => {
   return (
