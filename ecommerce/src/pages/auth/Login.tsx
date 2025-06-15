@@ -2,11 +2,11 @@ import { useRef, useContext } from 'react';
 import axios from 'axios';
 import { BaseUrlContext } from '../../context/BaseUrlContext.tsx';
 import Swal from 'sweetalert2';
-import {useCookies} from 'react-cookie';
+import { useCookies } from 'react-cookie';
 const Login = () => {
   const [baseUrl, header] = useContext(BaseUrlContext);
 
-const [cookies, setCookie, removeCookie] = useCookies(['ecommerce']);
+  const [cookies, setCookie, removeCookie] = useCookies(['ecommerce']);
   const emailRef = useRef(null);
   const passRef = useRef(null);
   const formSubmit = (e) => {
@@ -24,11 +24,19 @@ const [cookies, setCookie, removeCookie] = useCookies(['ecommerce']);
           header
         )
         .then((res) => {
-          setCookie('ecommerce',res.data);
-          console.log(res.data);
-            Swal.fire({
+          setCookie('ecommerce', {
+            id: res.data.id,
+            name: res.data.name,
+            surname: res.data.surname,
+            email: res.data.email,
+            phone: res.data.phone,
+          });
+          setCookie('token', {
+            token: res.data.token,
+          });
+          Swal.fire({
             title: 'Login successfully!',
-            text: "Congratulations!",
+            text: 'Congratulations!',
             icon: 'success',
           });
         })

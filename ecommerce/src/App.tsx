@@ -8,8 +8,7 @@ import ProductDetails from './pages/ProductDetails.tsx';
 import Login from './pages/auth/Login.tsx';
 import Register from './pages/auth/Register.tsx';
 import Account from './pages/auth/Account.tsx';
-
-
+import PrivateRoute from './utils/PrivateRoute.tsx';
 const App = () => {
   return (
     <BrowserRouter>
@@ -22,8 +21,9 @@ const App = () => {
           // auth start
           <Route path="/login" element={<Login />}></Route>
           <Route path="/register" element={<Register />}></Route>
-                    <Route path="/account/:id" element={<Account />}></Route>
-
+          <Route element={<PrivateRoute />}>
+            <Route path="/account/:id" element={<Account />}></Route>
+          </Route>
           // auth end
         </Routes>
       </Container>

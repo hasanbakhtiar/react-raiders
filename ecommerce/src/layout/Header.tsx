@@ -42,7 +42,8 @@ const Header = () => {
               Hello,{cookies.ecommerce.name} 
               </Link>
              <button className="btn btn-danger ms-3" onClick={()=>{
-               removeCookie('ecommerce')
+               removeCookie('ecommerce');
+               removeCookie('token');
              }}>Log out</button> 
             </div>
           ) : (
